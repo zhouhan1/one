@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.section{
+			overflow: hidden;
+			position:relative;
+		}
+		.section1{
+			background-image:url(images/section1.jpg);
+
+		}
+		.section1 .one{
+			width: 375px;
+			height: 26px;
+			background-image: url(images/logo.png);
+			position: absolute;
+			left:50%;
+            top:25px;
+            margin-left:-187.5px;
+		}
+		.section1 .one a{
+			display:block;
+			width: 375px;
+			height: 26px;
+		}
+		.section1 .two{
+			width:100%;
+			height:377px;
+			background-image: url(images/bg13.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			top:420px;
+		}
+		.section1 .three{
+			width:100%;
+			height:392px;
+			background-image: url(images/bg12.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			top:320px;
+		}
+		.section1 .four{
+			position: absolute;
+			left: 50%; 
+			top: 25%;
+			background-image: url(images/slogan.png); 
+			width: 554px;
+			height: 176px;
+			margin-left:-277px;
+			text-indent: -9999px;
+			-webkit-transform:scale(1,1); 
+			 transform:scale(1,1);
+			  transition: all 1s;
+			  opacity:1;
+		}
+		.section1 .five .p1{
+			position: absolute;
+			 left: 50%; 
+			 top: 50%;
+			 width: 600px;
+			 margin-left:-290px;
+			 color:#94a7c6;
+			 line-height:25px;
+			 font-size:14px;
+			  opacity:1;
+		}
+		.section2{
+			background-image:url(images/section2.jpg);
+		}
+		.section2 .one1{
+			background-image:url(images/bg21.png);
+			position: absolute; 
+			left: 100px;
+			bottom:25%;
+			width: 819px;
+			 height: 250px;
+			/* margin-left:-610px;*/
+		}
+		.section2 .two1{
+			background-image:url(images/bg22.png);
+			position: absolute; 
+			left: 400px;
+			bottom:30%;
+			width: 819px;
+			 height: 250px;
+			 /*margin-left:-310px;*/
+		}
+		.section2 .three1{
+			background-image:url(images/bg23.png);
+			position: absolute; 
+			left: 50%;
+			top:350px;
+			width: 819px;
+			 height: 325px; 
+			 margin-left:-410px;
+		}
+		.section2 .p2{
+			position: absolute; 
+			left: 50%;
+			top:10%;
+			opacity: 1;
+			color:#7f7f7f;
+			width:200px;
+			height:50px;
+			margin-left:-250px;
+			font-size:25px;
+			-webkit-transform:scale(1,1); 
+			 transform:scale(1,1);
+			  transition: all 1s;
+		}
+		.section2 .p3{
+			position: absolute; 
+			left: 50%;
+			top:17%;
+			color:#7f7f7f;
+			width:500px;
+			height:100px;
+			margin-left:-250px;
+			font-size:35px;
+			letter-spacing: 10px;
+			opacity: 1;
+			-webkit-transform:scale(1,1); 
+			 transform:scale(1,1);
+			  transition: all 1s;
+		}
+		.section2 .p4{
+			position: absolute; 
+			left: 50%;
+			top:25%;
+			color:#7f7f7f;
+			width:480px;
+			height:100px;
+			margin-left:-250px;
+			font-size:15px;
+			line-height: 30px;
+			opacity:1;
+		}
+		.section3{
+			background-image:url(images/section3.jpg);
+		}
+		.section3 .one2{
+			background-image:url(images/bg31.png);
+			position: absolute; 
+			left: 250px;
+			top:250px;
+			width: 892px;
+			 height: 472px;
+			 opacity: 1;
+			 -webkit-transform:scale(1,1); 
+			 transform:scale(1,1);
+			  transition: all 1s;
+		}
+		.section3 .two2{
+			background-image:url(images/bg33.png);
+			position: absolute; 
+			left: 550px;
+			top:420px;
+			width: 441px;
+			 height: 380px;
+			 background-repeat:no-repeat;
+		}
+		.section3 .three2{
+			background-image:url(images/bg32.png);
+			position: absolute; 
+			left: 850px;
+			top:650px;
+			width: 441px;
+			 height: 380px;
+			 background-repeat:no-repeat;
+			 opacity: 1;
+			 -webkit-transform:scale(1,1); 
+			 transform:scale(1,1);
+			  transition: all 1s;
+		}
+		.section3 .p5{
+			color:blue;
+			font-size:25px;
+			position: absolute; 
+			left: 450px;
+			top:120px;
+			opacity: 1;
+			-webkit-transform:scale(1,1); 
+			 transform:scale(1,1);
+			  transition: all 1s;
+		}
+		.section3 .p6{
+			color:orange;
+			font-size:30px;
+			position: absolute; 
+			left: 450px;
+			top:180px;
+			letter-spacing: 20px;
+			opacity: 1;
+			-webkit-transform:scale(1,1); 
+			 transform:scale(1,1);
+			  transition: all 1s;
+		}
+		.section3 .p7{
+			color:#fff;
+			width:500px;
+			height:500px;
+			position: absolute; 
+			left: 250px;
+			top:430px;
+		}
+	
+	</style>
+</head>
+<body>
+     <div id="box">
+     	<div class="section section1">
+     		<div class="one"><a href="#"></a></div>
+     		<div class="two"></div>
+     		<div class="three"></div>
+     		<div class="four">
+     			<h1><a href="http://www.jq22.com/">网易邮箱6.0</a></h1>
+				<h2>改变，不止所见。</h2>
+     		</div>
+     		<div class="five">
+     			<p class="p1">网易邮箱6.0版&mdash;&mdash;2014年最具创意气质的重量级新邮箱，重生光华，为之瞩目。唯美<br>的视觉设计和视觉化交互，无可替代的独创动态情景皮肤，多项国内创意产品专利技术，<br>成就无与伦比的出众品味，无可比拟的美妙体验。</p>
+     		</div>	
+     	</div>
+     	<div class="section section2">
+     		<div class="one1"></div>
+     		<div class="two1"></div>
+     		<div class="three1"></div>
+     		<p class="p2">[ 视觉·简 ]</p>
+	        <p class="p3">华丽蜕变，尽享愉悦之美</p>
+	        <p class="p4">秉承网易邮箱经典的清新简洁的设计风格，邮箱 6.0 版带来全新一代的<br>设计理念        ，更追求极致唯美的视觉设计、传承更多人文和艺术底蕴，华<br>丽蜕变，带来更舒服更爽心悦目的视        觉享受。</p>
+     	</div>
+     	<div class="section section3">
+     		<div class="one2"></div>
+     		<div class="two2"></div>
+     		<div class="three2"></div>
+     		<p class="p5">[ 视觉化交互设计 ]</p>
+     		<p class="p6">心随眼动，感官直接体验</p>
+     		<p class="p7">邮箱 6.0 版采用了全新的视觉化交互设计，通过对界面的整<br>体风格设计、重要信息的视觉化处理以及元素本身的视觉传<br>达优化，来实现产品流程设计和交互行为塑造。从视觉的角<br>度出发，让用户无需多想，直接通过感官与产品进行交互。</p>
+     	</div>
+     </div>
+</body>
+   <script>
+   	   $(function(){
+   	   	  $("#box").fullpage({
+   	   	  	navigation: true,
+   	   	  	verticalCentered:false,
+   	   	  	scrollingSpeed:1000,
+   	   	  	onLeave:function(index,nextIndex,direction){
+					if(index==1){
+						$(".one").animate({
+							top:"-50px"
+						},100)
+						$(".two").animate({
+						    top:"2000px"
+						},1000)
+						$(".three").animate({
+						    top:"2100px"
+						},1500)
+						$(".four").css({
+							'webkitTransform':'scale(0.1,0.1)',
+							'transform':'scale(0.1,0.1)',
+							"opacity":0.3
+						})
+						$(".p1").animate({
+							"opacity":0
+						})
+					}
+					if(index==2){
+						$(".p4").animate({
+							"opacity":0
+						})
+						$(".one1").animate({
+							left:"-2000px"
+						},100)
+						$(".two1").animate({
+							left:"2000px"
+						},1000)
+						$(".three1").animate({
+							top:"2000px"
+						},1500)
+						$(".p2").css({
+							'webkitTransform':'scale(0.1,0.1)',
+							'transform':'scale(0.1,0.1)',
+							"opacity":0.3
+						})
+						$(".p3").css({
+							'webkitTransform':'scale(0.1,0.1)',
+							'transform':'scale(0.1,0.1)',
+							"opacity":0.3
+						})
+					}
+					if(index==3){
+						$(".p7").animate({
+							left:"-2000px"
+						},100)
+						$(".two2").animate({
+							left:"2000px"
+						},100)
+						$(".p5,.p6,.one2,.three2").css({
+							'webkitTransform':'scale(0.1,0.1)',
+							'transform':'scale(0.1,0.1)',
+							"opacity":0
+						})
+					}
+					if(index==4){
+						$(".three3").animate({
+							top:"2000px"
+						},100)
+						$(".one3").animate({
+							top:"2000px"
+						},100)
+						$(".two3").animate({
+							top:"2000px"
+						},500)
+						$(".p8").css({
+							'webkitTransform':'scale(0.1,0.1)',
+							'transform':'scale(0.1,0.1)',
+							"opacity":0
+						})
+						
+					}
+				},
+   	   	  	afterLoad:function(anchorLink,index){
+               if(index==1){
+                    $(".one").animate({
+							top:"25px"
+						},2000)
+                    $(".two").animate({
+						    top:"420px"
+						},2000)
+                    $(".three").animate({
+						    top:"320px"
+						},2500)
+                    $(".four").css({
+							'webkitTransform':'scale(1,1)',
+							'transform':'scale(1,1)',
+							"opacity":1
+						})
+                    $(".p1").delay(2000).animate({
+							"opacity":1
+						},2000)
+               }
+               if(index==2){
+						$(".one1").animate({
+							left:"100px"
+						},1000)
+						$(".two1").animate({
+							left:"400px"
+						},1000)
+						$(".three1").animate({
+							top:"350px"
+						},1000)
+						 $(".p2").css({
+							'webkitTransform':'scale(1,1)',
+							'transform':'scale(1,1)',
+							"opacity":1
+						})
+						 $(".p3").css({
+							'webkitTransform':'scale(1,1)',
+							'transform':'scale(1,1)',
+							"opacity":1
+						})
+						 $(".p4").delay(1000).animate({
+							"opacity":1
+						},2000)
+
+					}
+			  if(index==3){
+			  	         $(".p7").animate({
+							left:"250px"
+						},1000)
+			  	         $(".two2").animate({
+							left:"550px"
+						},1000)
+			  	         $(".p5,.p6,.one2,.three2").css({
+							'webkitTransform':'scale(1,1)',
+							'transform':'scale(1,1)',
+							"opacity":1
+						})
+			  }
+			  if(index==4){
+			  	      $(".three3").animate({
+							top:"380px"
+						},1500)
+						$(".one3").animate({
+							top:"250px"
+						},1300)
+					}
+					$(".two3").animate({
+							top:"320px"
+						},1300)
+					$(".p8").css({
+							'webkitTransform':'scale(1,1)',
+							'transform':'scale(1,1)',
+							"opacity":1
+						})
+					
+   	   	  	},
+
+   	   	  })
+   	   })
+   </script>
+</html>
